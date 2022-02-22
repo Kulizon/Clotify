@@ -1,0 +1,71 @@
+.episode-catalogue {
+  width: 100%;
+  margin: 3rem 0 0;
+}
+
+.episode-catalogue .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.episode-catalogue .actions button:first-of-type {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.episode-catalogue .actions button:last-of-type {
+  width: 2.25rem;
+  height: 2.25rem;
+  margin: 0 1rem;
+}
+
+.episode-catalogue h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.episode-catalogue p {
+  color: #989898;
+  max-width: 800px;
+  font-size: 1.05rem;
+  margin-bottom: 3rem;
+}
+
+.episode-catalogue button:hover {
+  cursor: pointer;
+}
+
+.episode-catalogue a button {
+  border-radius: 360px;
+  border: 1px solid #989898;
+  padding: 0.5rem 2rem;
+  font-weight: 800;
+  color: #eee;
+  font-size: 0.95rem;
+  background: none;
+}
+
+.episode-catalogue a button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .episode-catalogue h2 {
+    font-size: 1.5rem;
+  }
+  .episode-catalogue p {
+    font-size: 0.9rem;
+  }
+  .episode-catalogue a button {
+    font-size: 0.9rem;
+  }
+}

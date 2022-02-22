@@ -1,0 +1,159 @@
+.info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .image-wrap {
+    width: 15rem;
+    height: 15rem;
+    margin-right: 2rem;
+    position: relative;
+    overflow: hidden;
+    min-width: 14rem;
+
+    img {
+      width: 100%;
+    }
+
+    div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      bottom: 0%;
+      z-index: 1;
+      color: #000;
+      opacity: 0.9;
+
+      svg:first-of-type {
+        width: 115%;
+        position: absolute;
+        top: -20%;
+        left: -5%;
+        transform: rotate(-10deg);
+      }
+
+      svg:last-of-type {
+        width: 170%;
+        position: absolute;
+        bottom: 0;
+      }
+
+      h5 {
+        position: absolute;
+        font-size: 1.6rem;
+        left: 0.75rem;
+        bottom: 0.5rem;
+        font-weight: 800;
+      }
+    }
+  }
+}
+
+.catalogue-info {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+
+  h2 {
+    font-weight: 800;
+    font-size: 3.5rem;
+    margin: 0rem 0 1.5rem;
+    max-width: 800px;
+  }
+
+  h5 {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  &.user-space {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+
+  div,
+  img {
+    height: 1.5rem;
+    width: 1.5rem;
+    background: #1db653;
+    border-radius: 360px;
+  }
+
+  p {
+    margin-left: 0.5rem;
+    font-weight: 600;
+    color: #a2b3b3;
+
+    span {
+      font-weight: 800;
+      color: #fff;
+    }
+  }
+}
+
+.image-placeholder {
+  align-self: center;
+  border-radius: 5px;
+  width: 240px;
+  height: 240px;
+  background: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.5rem;
+
+  p {
+    color: #171717;
+    font-weight: 800;
+  }
+}
+
+.circle {
+  border-radius: 360px;
+}
+
+@media (max-width: 1500px) {
+  .catalogue-info h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .catalogue-info h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .image-wrap {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .info .image-wrap div h5 {
+    font-size: 1.4rem;
+  }
+
+  .catalogue-info {
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .user-info {
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}

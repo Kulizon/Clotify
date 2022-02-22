@@ -1,0 +1,147 @@
+.app {
+  display: grid;
+  grid-template-columns: 15rem auto 17rem;
+  grid-template-rows: 6.5rem auto 6rem;
+  width: 100%;
+  height: 100vh;
+  background: #121212;
+}
+
+.admin-app,
+.login-app,
+.register-app {
+  width: 100%;
+  min-height: 100vh;
+  background: #121212;
+}
+
+body {
+  background: #121212;
+}
+
+.main {
+  background: #121212;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.75rem 4rem 3rem;
+  overflow-y: scroll;
+}
+
+.main::-webkit-scrollbar {
+  width: 20px;
+}
+
+.main::-webkit-scrollbar-thumb {
+  border: 6px solid #121212;
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background: #575757;
+}
+
+.main::-webkit-scrollbar-thumb:hover {
+  background: #878787;
+}
+
+.circle {
+  border-radius: 360px !important;
+}
+
+.rounded {
+  border-radius: 15px !important;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.catalogue-loading {
+  transform: scale(1.25) translateY(100px);
+  align-self: center;
+}
+
+/* React Select */
+.css-1n7v3ny-option {
+  background-color: #272727 !important;
+}
+
+.app .css-1n7v3ny-option {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
+.app .css-14el2xx-placeholder {
+  color: #a2b3b3 !important;
+}
+
+.app .css-9gakcf-option {
+  background: rgba(0, 0, 0, 0.15) !important;
+}
+
+@media (max-width: 1100px) {
+  .app {
+    grid-template-rows: auto auto 9rem 0 !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .app {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto 9rem 5rem !important;
+  }
+
+  .app aside {
+    display: none;
+  }
+
+  .app header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+
+  .app main {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+
+  /* player */
+  .app > div:first-of-type {
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+
+  /* mobile menu */
+  .app > div:last-of-type {
+    display: flex;
+    grid-column: 1/4;
+  }
+}
+
+@media (max-width: 700px) {
+  .main {
+    padding: 0 0.75rem 4rem 2rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  body {
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 75%;
+  }
+}

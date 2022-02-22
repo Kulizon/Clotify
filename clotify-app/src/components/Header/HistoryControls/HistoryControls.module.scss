@@ -1,0 +1,25 @@
+.history-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 5rem;
+
+  button {
+    background: none;
+    display: flex;
+  }
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 360px;
+    background: #000;
+    padding: 0.4rem;
+    color: #a2b3b3;
+    transition: 0.2s;
+
+    &:hover {
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.history-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 5rem;
+}
+
+.history-controls button {
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.history-controls svg {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 360px;
+  background: #000;
+  padding: 0.4rem;
+  color: #a2b3b3;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.history-controls svg:hover {
+  color: #fff;
+  cursor: pointer;
+}

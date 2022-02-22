@@ -1,0 +1,50 @@
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  width: 100%;
+  max-width: 1000px;
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #212121;
+    padding: 0.5rem 1rem;
+    transition: 0.2s;
+
+    &:hover {
+      background: #212121;
+    }
+
+    &:first-of-type {
+      background: #264b5d;
+
+      h3 {
+        font-weight: 400;
+        color: #eee;
+      }
+    }
+
+    h3,
+    a {
+      font-weight: 600;
+      color: #81d4fa;
+      transition: 0.2s;
+
+      &:hover {
+        color: #29aae6;
+        cursor: pointer;
+      }
+    }
+
+    a {
+      margin-left: 2rem;
+      font-weight: 400;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

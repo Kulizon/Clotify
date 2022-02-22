@@ -1,0 +1,84 @@
+.featured-container {
+  grid-column: span 2;
+}
+
+.featured-container > div {
+  background: -webkit-gradient(linear, left top, right bottom, from(#460df4), to(#8c8ae6));
+  background: linear-gradient(to right bottom, #460df4, #8c8ae6);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-radius: 5px;
+  padding: 1.5rem;
+  position: relative;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  min-height: 18rem;
+}
+
+.featured-container > div:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.featured-container > div {
+  margin-top: 3rem;
+}
+
+.featured-container > div > div:first-of-type {
+  -webkit-transform: translateY(-2.5rem);
+          transform: translateY(-2.5rem);
+}
+
+.featured-container > div p {
+  font-size: 1.1rem;
+  color: #c8bbfa;
+  font-weight: 600;
+  display: inline;
+}
+
+.featured-container > div p span {
+  color: #fff;
+}
+
+.featured-container > div h3 {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.featured-container > div h4 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.alternative > div {
+  background: -webkit-gradient(linear, left top, right bottom, from(#00644e), to(#238267));
+  background: linear-gradient(to right bottom, #00644e, #238267);
+}
+
+.alternative > div div p {
+  color: #afcfc7;
+}
+
+@media (max-width: 500px) {
+  .featured-container > div {
+    padding: 1.25rem;
+  }
+  .featured-container > div p {
+    font-size: 0.95rem;
+  }
+  .featured-container > div h3 {
+    font-size: 1.45rem;
+  }
+  .featured-container > div h4 {
+    font-size: 1.05rem;
+  }
+}

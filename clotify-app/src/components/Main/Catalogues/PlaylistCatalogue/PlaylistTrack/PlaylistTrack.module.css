@@ -1,0 +1,148 @@
+.track {
+  color: #989898;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 3px;
+}
+
+.track:hover {
+  background: #2a2a2a;
+}
+
+.track:hover .order {
+  display: none;
+}
+
+.track:hover .play {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: none;
+}
+
+.track:hover .play svg {
+  color: #fff;
+}
+
+.track:hover button {
+  opacity: 1;
+}
+
+.track button {
+  opacity: 0;
+}
+
+.track .play {
+  display: none;
+}
+
+.track .order {
+  font-weight: 600;
+}
+
+.track div:not(.actions) {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3rem auto;
+      grid-template-columns: 3rem auto;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+}
+
+.track div:not(.actions) div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.track div:not(.actions) img {
+  width: 3rem;
+  -ms-grid-rows: span 2;
+      grid-template-rows: span 2;
+}
+
+.track div:not(.actions) h6 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.track div:not(.actions) p {
+  justify-self: flex-start;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  margin-top: 0rem;
+}
+
+.actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.actions button svg,
+.actions span {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.actions .delete-button {
+  background: none;
+}
+
+.actions .delete-button svg {
+  fill: #989898;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.actions .delete-button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .track .actions {
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .track div:not(.actions) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+  }
+  .track div:not(.actions) div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .track button,
+  .track button svg {
+    width: 1rem;
+  }
+  .track .delete-button {
+    width: 0;
+    -webkit-transform: translate(-0.5rem, 0.1rem);
+            transform: translate(-0.5rem, 0.1rem);
+  }
+  .track .delete-button svg {
+    width: 0.8rem;
+  }
+}

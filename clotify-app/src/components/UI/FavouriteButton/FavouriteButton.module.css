@@ -1,0 +1,28 @@
+.favourite,
+.not-favourite {
+  width: 1rem;
+  height: 1rem;
+  background: none;
+}
+
+.favourite:hover,
+.not-favourite:hover {
+  cursor: pointer;
+}
+
+.favourite {
+  opacity: 1 !important;
+}
+
+.favourite svg {
+  color: #1db653;
+}
+
+.not-favourite {
+  width: 1rem;
+  height: 1rem;
+}
+
+.not-favourite svg {
+  color: #989898;
+}

@@ -1,0 +1,33 @@
+.form-group {
+  display: flex;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #272727;
+
+  label {
+    width: 10rem;
+    color: #eee;
+    font-weight: 800;
+  }
+
+  input {
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #353535;
+    background: #121212;
+    color: #eee;
+    border-radius: 3px;
+    width: 30rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .form-group {
+    label {
+      width: 10rem;
+    }
+
+    input {
+      width: 100%;
+    }
+  }
+}

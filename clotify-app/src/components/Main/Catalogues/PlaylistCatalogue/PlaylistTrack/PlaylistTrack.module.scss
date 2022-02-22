@@ -1,0 +1,125 @@
+.track {
+  color: #989898;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 3px;
+
+  &:hover {
+    background: #2a2a2a;
+
+    .order {
+      display: none;
+    }
+
+    .play {
+      display: flex;
+      background: none;
+
+      svg {
+        color: #fff;
+      }
+    }
+
+    button {
+      opacity: 1;
+    }
+  }
+
+  button {
+    opacity: 0;
+  }
+
+  .play {
+    display: none;
+  }
+
+  .order {
+    font-weight: 600;
+  }
+
+  div:not(.actions) {
+    display: grid;
+    grid-template-columns: 3rem auto;
+    column-gap: 1rem;
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    img {
+      width: 3rem;
+      grid-template-rows: span 2;
+    }
+
+    h6 {
+      color: #fff;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    p {
+      justify-self: flex-start;
+      grid-column: 2/3;
+      margin-top: 0rem;
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+
+  button svg,
+  span {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .delete-button {
+    background: none;
+
+    svg {
+      fill: #989898;
+      height: 1.25rem;
+      width: 1.25rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .track {
+    .actions {
+      column-gap: 1rem;
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+
+    div:not(.actions) {
+      grid-column: 2/4;
+
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    button,
+    button svg {
+      width: 1rem;
+    }
+
+    .delete-button {
+      width: 0;
+      transform: translate(-0.5rem, 0.1rem);
+
+      svg {
+        width: 0.8rem;
+      }
+    }
+  }
+}

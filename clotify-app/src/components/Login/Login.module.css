@@ -1,0 +1,109 @@
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.main h1 {
+  color: #eee;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.background-rectangle {
+  width: 200rem;
+  height: 70vh;
+  position: absolute;
+  background: linear-gradient(-60deg, #1e1e1e, #141414);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  right: -27rem;
+}
+
+.background-rectangle:first-of-type {
+  right: -95rem;
+  bottom: -5rem;
+  -webkit-transform: rotate(-36deg);
+          transform: rotate(-36deg);
+  background: linear-gradient(60deg, #1e1e1e, #141414);
+}
+
+.login-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 1;
+  width: 20rem;
+}
+
+.login-form input {
+  margin-bottom: 1.5rem;
+}
+
+.login-form > div:not(.loading) {
+  margin-bottom: 1rem;
+}
+
+.login-form button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 2rem;
+}
+
+.login-form button:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.login-form .error-message {
+  color: #ea3d3d;
+  text-align: left;
+  font-size: 0.95rem;
+  text-transform: none;
+  letter-spacing: 0px;
+  margin-top: 0;
+}
+
+.login-form p {
+  color: #838383cb;
+  text-align: center;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+}
+
+.login-form p span {
+  font-weight: bold;
+  color: #a5a5a5;
+}
+
+.login-form p span:hover {
+  text-decoration: underline;
+}
+
+.loading {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
