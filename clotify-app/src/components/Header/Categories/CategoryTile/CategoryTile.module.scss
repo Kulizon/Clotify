@@ -1,0 +1,19 @@
+.tile {
+  transition: 0.2s;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  margin-right: 1rem;
+
+  &:not(.active):hover {
+    background: #3e3e3e;
+    cursor: pointer;
+  }
+
+
+}
+
+.active {
+  background: #282828;
+}

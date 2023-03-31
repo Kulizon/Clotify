@@ -1,0 +1,14 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #212121;
+
+  div h3, div a {
+      font-size: 1rem;
+  }
+
+  & > div:last-of-type {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,36 @@
+.button {
+  width: 2rem;
+  height: 2rem;
+  color: #b3b3b3;
+  background: #181818;
+  border-radius: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    color: #eee;
+    cursor: pointer;
+  }
+
+  svg {
+    width: 0.8rem;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+.featured {
+  width: 2.25rem;
+  height: 2.25rem;
+  background: #eee;
+  color: #181818;
+
+  &:hover {
+    color: #181818;
+    transform: scale(1.1);
+  }
+}

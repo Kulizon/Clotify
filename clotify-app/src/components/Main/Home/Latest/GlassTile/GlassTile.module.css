@@ -1,0 +1,48 @@
+.tile {
+  background-color: #303030;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  position: relative;
+  height: 5rem;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+
+.tile svg {
+  pointer-events: none;
+}
+
+.tile:hover {
+  background: #434343;
+  cursor: pointer;
+}
+
+.tile:hover button {
+  opacity: 1;
+}
+
+.tile img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.tile h3 {
+  margin: 0 4.5rem 0 1rem;
+  color: #fff;
+}
+
+.tile button {
+  position: absolute;
+  right: 1rem;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}

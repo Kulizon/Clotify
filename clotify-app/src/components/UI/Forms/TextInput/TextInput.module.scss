@@ -1,0 +1,10 @@
+.input {
+  background: #333333;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: #a5a5a5;
+
+  &::placeholder {
+    color: #838383cb;
+  }
+}

@@ -1,0 +1,17 @@
+.main {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    color: #eee;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 3rem 1rem;
+  }
+}

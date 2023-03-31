@@ -1,0 +1,73 @@
+.podcast-catalogue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 3rem 0 0;
+}
+
+.podcast-catalogue .follow-button {
+  padding: 0.3rem 1.25rem;
+  background: none;
+  border: 1px solid #989898;
+  font-weight: 800;
+  color: #eee;
+  border-radius: 5px;
+}
+
+.podcast-catalogue .follow-button:hover {
+  border-color: #eee;
+  cursor: pointer;
+}
+
+.podcast-catalogue .follow-button.following {
+  border-color: #eee;
+}
+
+.template {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 2fr;
+      grid-template-columns: 5fr 2fr;
+  -webkit-column-gap: 4rem;
+          column-gap: 4rem;
+}
+
+.template .episodes {
+  margin-top: 3rem;
+}
+
+.template .info h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.template .info p {
+  color: #989898;
+  font-weight: 600;
+}
+
+.followed {
+  border: 1px solid #fff !important;
+}
+
+@media (max-width: 1200px) {
+  .template {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .template .info {
+    margin-top: 3rem;
+  }
+}

@@ -1,0 +1,141 @@
+.wrap {
+  display: flex;
+  position: relative;
+}
+
+.delete-button {
+  position: absolute;
+  right: 0.4rem;
+  top: 0.4rem;
+  z-index: 3;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #171717;
+  padding: 1.25rem;
+  transition: 0.3s;
+  position: relative;
+  z-index: 2;
+
+  &:hover {
+    background: #272727;
+    cursor: pointer;
+
+    .play-button {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  & > div:first-of-type {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+
+    img {
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    div:not(.image-placeholder) {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      bottom: 0%;
+      z-index: 1;
+      color: #000;
+      opacity: 0.9;
+
+      svg:first-of-type {
+        width: 115%;
+        position: absolute;
+        top: -20%;
+        left: -5%;
+        transform: rotate(-10deg);
+      }
+
+      svg:last-of-type {
+        width: 200%;
+        position: absolute;
+        bottom: 0;
+      }
+
+      h5 {
+        position: absolute;
+        font-size: 1.3rem;
+        left: 0.75rem;
+        bottom: 0.3rem;
+        font-weight: 800;
+      }
+    }
+
+    button {
+      z-index: 2;
+    }
+  }
+
+  h3 {
+    color: #fff;
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  p {
+    color: #a7a7a7;
+  }
+}
+
+.play-button {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.75rem;
+  transition: 0.3s;
+  opacity: 0;
+  transform: translateY(1rem);
+
+  svg,
+  path {
+    pointer-events: none;
+  }
+}
+
+.hidden-image {
+  opacity: 0;
+}
+
+.image-placeholder {
+  border-radius: 5px;
+  background: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 40000;
+
+  p {
+    color: #171717;
+    font-weight: 800;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0.85rem;
+
+    h3 {
+      font-size: 0.9rem;
+    }
+
+    > div:first-of-type div:not(.image-placeholder) h5 {
+      left: 0.25rem;
+      bottom: 0.25rem;
+      font-size: 0.75rem;
+    }
+  }
+}

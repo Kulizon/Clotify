@@ -1,0 +1,136 @@
+.search-box {
+  margin-right: auto;
+  margin-left: 2rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-box input[type="text"] {
+  width: 20rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  border-radius: 360px;
+  background: #fff;
+  padding: 0.1rem 3rem 0.1rem 1.25rem;
+  color: #181818;
+}
+
+.search-box input[type="text"]::-webkit-input-placeholder {
+  color: #a2b3b3;
+}
+
+.search-box input[type="text"]:-ms-input-placeholder {
+  color: #a2b3b3;
+}
+
+.search-box input[type="text"]::-ms-input-placeholder {
+  color: #a2b3b3;
+}
+
+.search-box input[type="text"]::placeholder {
+  color: #a2b3b3;
+}
+
+.search-box button {
+  position: absolute;
+  width: 1.25rem;
+  left: 17.5rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-box button:hover {
+  cursor: pointer;
+}
+
+.search-box button svg[data-icon="search"] {
+  color: #181818;
+}
+
+.search-box > div {
+  width: 10rem;
+  margin-left: 2rem;
+  z-index: 10;
+}
+
+.search-box > div svg {
+  color: #181818;
+}
+
+.search-box > div div {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #181818;
+}
+
+.search-box > div > div:first-of-type {
+  padding: 0.1rem 0.3rem;
+  border-radius: 360px;
+  background: #fff;
+}
+
+.search-box > div > div:nth-of-type(2) {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.search-box > div > div:nth-of-type(2) > div {
+  background: #fff;
+  padding: 0;
+}
+
+.search-box > div > div:nth-of-type(2) > div div {
+  background: #fff;
+  color: #181818;
+  border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+  .search-box > div {
+    margin-left: 0 !important;
+    width: 10rem !important;
+  }
+  .search-box > div > div:nth-of-type(2) > div > div {
+    padding: 0.25rem 0.5rem;
+  }
+  .search-box input[type="text"] {
+    font-size: 0.95rem;
+  }
+  .search-box input::-webkit-input-placeholder,
+  .search-box > div div {
+    font-size: 0.95rem;
+    padding: 0.1rem;
+  }
+  .search-box input:-ms-input-placeholder,
+  .search-box > div div {
+    font-size: 0.95rem;
+    padding: 0.1rem;
+  }
+  .search-box input::-ms-input-placeholder,
+  .search-box > div div {
+    font-size: 0.95rem;
+    padding: 0.1rem;
+  }
+  .search-box input::placeholder,
+  .search-box > div div {
+    font-size: 0.95rem;
+    padding: 0.1rem;
+  }
+  .search-box button {
+    width: initial !important;
+    height: initial !important;
+  }
+  .search-box button svg {
+    width: 1.3rem !important;
+    height: 1.3rem !important;
+    -webkit-transform: translateX(0.2rem);
+            transform: translateX(0.2rem);
+  }
+}

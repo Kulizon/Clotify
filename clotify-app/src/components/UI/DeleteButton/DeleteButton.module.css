@@ -1,0 +1,30 @@
+.button {
+  background: rgba(0, 0, 0, 0.7);
+  width: 2rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 360px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.button svg {
+  width: 45%;
+  fill: #fff;
+  pointer-events: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: rgba(0, 0, 0, 0.8);
+}

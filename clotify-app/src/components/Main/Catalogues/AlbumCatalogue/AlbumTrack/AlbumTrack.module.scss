@@ -1,0 +1,91 @@
+.track {
+  color: #989898;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 3px;
+
+  &:hover {
+    background: #2a2a2a;
+
+    .order {
+      display: none;
+    }
+
+    .play {
+      display: flex;
+      background: none;
+
+      svg {
+        color: #fff;
+      }
+    }
+
+    button {
+      opacity: 1;
+    }
+  }
+
+  button {
+    opacity: 0;
+  }
+
+  .play {
+    display: none;
+  }
+
+  .order {
+    font-weight: 600;
+  }
+
+  div:not(.actions) {
+    display: grid;
+    grid-template-rows: 1.5rem 1.5rem;
+    column-gap: 1rem;
+
+    h6 {
+      color: #fff;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    p {
+      justify-self: flex-start;
+      grid-column: 1/2;
+    }
+  }
+
+  &.highlighted {
+    background: #3d3d3d;
+
+    &:hover {
+      background: #3d3d3d;
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+
+  button svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .track {
+    .actions {
+      column-gap: 1rem;
+    }
+
+    div:not(.actions) {
+      grid-template-rows: auto 1rem;
+    }
+
+    button,
+    button svg {
+      width: 1rem;
+    }
+  }
+}

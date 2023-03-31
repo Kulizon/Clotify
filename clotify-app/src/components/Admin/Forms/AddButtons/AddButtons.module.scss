@@ -1,0 +1,31 @@
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background: #212121;
+  padding: 1rem;
+  border-radius: 3px;
+
+  button {
+    background: #264b5d;
+    padding: 0.4rem 1rem;
+    margin-left: 2rem;
+    color: #eee;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: 0.2s;
+
+    &:hover {
+      background: #609ab6;
+      cursor: pointer;
+    }
+
+    &.featured {
+      background: #417690;
+
+      &:hover {
+        background: #264b5d;
+      }
+    }
+  }
+}

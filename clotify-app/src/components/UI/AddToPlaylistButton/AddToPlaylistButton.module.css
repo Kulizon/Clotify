@@ -1,0 +1,57 @@
+.button {
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.button svg {
+  color: #989898;
+  width: 1rem;
+  height: 1rem;
+}
+
+.button svg:hover {
+  cursor: pointer;
+}
+
+.button ul {
+  background: #242424;
+  position: absolute;
+  width: 10rem;
+  top: 2rem;
+  right: 0rem;
+  padding: 0.4rem;
+  border-radius: 5px;
+  z-index: 1000;
+  display: block;
+}
+
+.button ul hr {
+  border-top: #3e3e3e 1px solid;
+  margin: 0 10px;
+}
+
+.button ul li {
+  margin: 0.2rem 0;
+  padding: 0.75rem 1rem;
+  color: #cacaca;
+  font-weight: 600;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 3px;
+  text-align: left;
+}
+
+.button ul li:hover {
+  background: #3e3e3e;
+  color: #fff;
+  cursor: pointer;
+}

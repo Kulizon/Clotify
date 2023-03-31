@@ -1,0 +1,73 @@
+.episode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 0.75rem;
+  border-top: 1px solid #2a2a2a;
+  border-radius: 3px;
+}
+
+.episode:hover {
+  background: #2a2a2a;
+  cursor: pointer;
+}
+
+.episode img {
+  width: 9rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.episode div h4 {
+  color: #fff;
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+}
+
+.episode div p {
+  color: #989898;
+  font-size: 1rem;
+}
+
+.episode button {
+  background: #fff;
+  margin-top: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.episode button svg {
+  color: #121212;
+}
+
+@media (max-width: 700px) {
+  .episode img {
+    width: 7rem;
+  }
+  .episode div h4 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .episode {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .episode img {
+    width: 9rem;
+  }
+  .episode div {
+    margin-top: 1rem;
+  }
+  .episode div h4 {
+    font-size: 1.3rem;
+  }
+  .episode div p {
+    font-size: 0.9rem;
+  }
+}

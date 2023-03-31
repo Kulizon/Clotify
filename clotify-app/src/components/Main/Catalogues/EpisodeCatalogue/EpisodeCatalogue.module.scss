@@ -1,0 +1,70 @@
+.episode-catalogue {
+  width: 100%;
+  margin: 3rem 0 0;
+
+  .actions {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    button:first-of-type {
+      width: 3.5rem;
+      height: 3.5rem;
+      margin-right: 1rem;
+    }
+
+    button:last-of-type {
+      width: 2.25rem;
+      height: 2.25rem;
+      margin: 0 1rem;
+    }
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+  }
+
+  p {
+    color: #989898;
+    max-width: 800px;
+    font-size: 1.05rem;
+    margin-bottom: 3rem;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  a button {
+    border-radius: 360px;
+    border: 1px solid #989898;
+    padding: 0.5rem 2rem;
+    font-weight: 800;
+    color: #eee;
+    font-size: 0.95rem;
+    background: none;
+
+    &:hover {
+      transform: scale(1.05);
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .episode-catalogue {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    a button {
+      font-size: 0.9rem;
+    }
+  }
+}

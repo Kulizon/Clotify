@@ -1,0 +1,159 @@
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.delete-button {
+  position: absolute;
+  right: 0.4rem;
+  top: 0.4rem;
+  z-index: 3;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #171717;
+  padding: 1.25rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  z-index: 2;
+}
+
+.container:hover {
+  background: #272727;
+  cursor: pointer;
+}
+
+.container:hover .play-button {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.container > div:first-of-type {
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container > div:first-of-type img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.container > div:first-of-type div:not(.image-placeholder) {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0%;
+  z-index: 1;
+  color: #000;
+  opacity: 0.9;
+}
+
+.container > div:first-of-type div:not(.image-placeholder) svg:first-of-type {
+  width: 115%;
+  position: absolute;
+  top: -20%;
+  left: -5%;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.container > div:first-of-type div:not(.image-placeholder) svg:last-of-type {
+  width: 200%;
+  position: absolute;
+  bottom: 0;
+}
+
+.container > div:first-of-type div:not(.image-placeholder) h5 {
+  position: absolute;
+  font-size: 1.3rem;
+  left: 0.75rem;
+  bottom: 0.3rem;
+  font-weight: 800;
+}
+
+.container > div:first-of-type button {
+  z-index: 2;
+}
+
+.container h3 {
+  color: #fff;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.container p {
+  color: #a7a7a7;
+}
+
+.play-button {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.75rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+}
+
+.play-button svg,
+.play-button path {
+  pointer-events: none;
+}
+
+.hidden-image {
+  opacity: 0;
+}
+
+.image-placeholder {
+  border-radius: 5px;
+  background: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 40000;
+}
+
+.image-placeholder p {
+  color: #171717;
+  font-weight: 800;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0.85rem;
+  }
+  .container h3 {
+    font-size: 0.9rem;
+  }
+  .container > div:first-of-type div:not(.image-placeholder) h5 {
+    left: 0.25rem;
+    bottom: 0.25rem;
+    font-size: 0.75rem;
+  }
+}

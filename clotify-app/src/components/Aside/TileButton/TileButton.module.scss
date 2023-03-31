@@ -1,0 +1,26 @@
+.tile {
+  display: flex;
+  align-items: center;
+  background: none;
+  color: #a2b3b3;
+  margin: 1.25rem 0;
+  font-size: 1.1rem;
+  transition: 0.2s;
+  font-weight: 600;
+
+  svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 1rem;
+  }
+
+  &:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.active {
+  background: #282828;
+  color: #fff;
+}

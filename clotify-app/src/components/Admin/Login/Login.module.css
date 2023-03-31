@@ -1,0 +1,83 @@
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+  padding-top: 10%;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+  background: #212121;
+  color: #eeeeee;
+}
+
+.login h1 {
+  background: #417690;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+}
+
+.login form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 2rem;
+  font-size: 1.2rem;
+}
+
+.login form label:last-of-type {
+  margin-top: 1rem;
+}
+
+.login form input {
+  border-radius: 3px;
+  background: none;
+  border: 1.75px solid #353535;
+  width: 20rem;
+  padding: 0.35rem 1rem;
+  margin-top: 0.2rem;
+  color: inherit;
+}
+
+.login form input:focus {
+  border-color: #4b4b4b;
+}
+
+.login form button {
+  margin-top: 1.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0.5rem 1rem;
+  background: #264b5d;
+  border-radius: 3px;
+  color: #eee;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.login form button:hover {
+  background: #417690;
+  cursor: pointer;
+}

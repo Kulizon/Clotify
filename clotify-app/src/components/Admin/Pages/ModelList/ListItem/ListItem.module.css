@@ -1,0 +1,36 @@
+.item {
+  border-top: 2px solid #212121;
+  padding: 0.75rem 1rem;
+}
+
+.item svg {
+  fill: #f20b36;
+  margin-top: 0.1rem;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.item svg:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+
+.item a h4 {
+  font-weight: 600;
+  color: #81d4fa;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.item a h4:hover:not(.not-link) {
+  color: #4ac1f7;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.item h4 {
+  font-size: 0.95rem;
+  color: #eee;
+  font-weight: 400;
+}

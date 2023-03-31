@@ -1,0 +1,36 @@
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  background: #212121;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+.buttons button {
+  background: #264b5d;
+  padding: 0.4rem 1rem;
+  margin-left: 2rem;
+  color: #eee;
+  font-size: 1rem;
+  border-radius: 5px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.buttons button:hover {
+  background: #609ab6;
+  cursor: pointer;
+}
+
+.buttons button.featured {
+  background: #417690;
+}
+
+.buttons button.featured:hover {
+  background: #264b5d;
+}
